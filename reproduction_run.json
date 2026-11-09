@@ -1,0 +1,111 @@
+{
+  "settings": {
+    "samples": 64,
+    "nx": 24,
+    "ny": 24,
+    "N": 5,
+    "seed": 20261017,
+    "solver": "sparse_direct_active_set",
+    "target": "two rectangular bumps",
+    "covariance": "sigma^2 exp(-||x-x'||_2/ell)",
+    "figures": "/Users/alinehrani/projects/git_anehrani/paper_smNewton/cjam/figures",
+    "studies": {
+      "mesh_levels": [
+        6,
+        12,
+        24
+      ],
+      "kl_levels": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "sigma_levels": [
+        0.3,
+        0.6,
+        0.9,
+        1.2
+      ],
+      "beta_levels": [
+        0.02,
+        0.2,
+        2.0
+      ],
+      "c_levels": [
+        0.1,
+        0.9,
+        1.5
+      ],
+      "study_samples": 64
+    }
+  },
+  "results": [
+    {
+      "example": "example1",
+      "samples": 64,
+      "nx": 24,
+      "ny": 24,
+      "N": 5,
+      "beta": 0.2,
+      "c": 0.9,
+      "ell": 1.0,
+      "sigma": 0.9,
+      "retained_variance": 0.6818412267588391,
+      "retained_ratio": 0.841779292294863,
+      "tracking_error": 0.17963461401765107,
+      "regularization_term": 0.0036514598925863535,
+      "objective": 0.09164303695511872,
+      "max_box_violation": 0.0,
+      "mean_newton_iterations": 1.9375,
+      "max_newton_iterations": 4,
+      "max_residual": 1.542680820503263e-14,
+      "seconds": 0.9812413750000001
+    },
+    {
+      "example": "example2",
+      "samples": 64,
+      "nx": 24,
+      "ny": 24,
+      "N": 5,
+      "beta": 0.2,
+      "c": 0.9,
+      "ell": 1.0,
+      "sigma": 0.9,
+      "retained_variance": 0.6818412267588391,
+      "retained_ratio": 0.841779292294863,
+      "tracking_error": 0.14743446883781836,
+      "regularization_term": 0.006320700546459207,
+      "objective": 0.07687758469213878,
+      "max_box_violation": 0.0,
+      "mean_newton_iterations": 2.109375,
+      "max_newton_iterations": 4,
+      "max_residual": 1.3642792270258162e-14,
+      "seconds": 0.9657525409999999
+    }
+  ],
+  "eigenvalues": {
+    "example1": [
+      0.4981802679452778,
+      0.0715810841149403,
+      0.07158108411494019,
+      0.02270837078752464,
+      0.017790419796156136
+    ],
+    "example2": [
+      0.4981802679452778,
+      0.0715810841149403,
+      0.07158108411494019,
+      0.02270837078752464,
+      0.017790419796156136
+    ]
+  },
+  "study_files": [
+    "mesh_convergence.csv",
+    "mesh_convergence_rates.csv",
+    "kl_convergence.csv",
+    "kl_convergence_rates.csv",
+    "variance_sweep.csv",
+    "beta_c_sensitivity.csv"
+  ]
+}

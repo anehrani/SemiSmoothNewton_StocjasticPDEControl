@@ -1,0 +1,41 @@
+{
+  "samples": 64,
+  "nx": 24,
+  "ny": 24,
+  "N": 5,
+  "seed": 20261017,
+  "solver": "sparse_direct_active_set",
+  "target": "two rectangular bumps",
+  "covariance": "sigma^2 exp(-||x-x'||_2/ell)",
+  "figures": "/Users/alinehrani/projects/git_anehrani/paper_smNewton/cjam/figures",
+  "studies": {
+    "mesh_levels": [
+      6,
+      12,
+      24
+    ],
+    "kl_levels": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "sigma_levels": [
+      0.3,
+      0.6,
+      0.9,
+      1.2
+    ],
+    "beta_levels": [
+      0.02,
+      0.2,
+      2.0
+    ],
+    "c_levels": [
+      0.1,
+      0.9,
+      1.5
+    ],
+    "study_samples": 64
+  }
+}
